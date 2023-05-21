@@ -6,7 +6,7 @@
 - Separate views for the Http Request Methods
 
 ### Steps:
-- In ObjectMapper, disable MapperFeature.DEFAULT_VIEW_INCLUSION otherwise the non-annotated field will also serialize.
+- In ObjectMapper, disable MapperFeature.DEFAULT_VIEW_INCLUSION otherwise the non-annotated fields will also serialize.
 - Create an interface with name 'Views' for different views of a DTO. Here you can create DTO based view interfaces like UserViews, EmployeeViews etc.
 - Now above all DTO fields you can use @JsonView annotation with view class type.
 
